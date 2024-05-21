@@ -2,6 +2,8 @@ name: Build and Push Container Image
 
 on:
   push:
+    branches:
+      - master
     paths: [ .github/bootstrap-image/** ]
 env:
   ARTIFACTORY: one.hitachivantara.com/devops-docker-release
